@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "flask-observability"
+version = "0.1.0"
+description = "Make your Flask app observable using OpenTelemetry, logging and more"
+authors = ["Maxime Bouroumeau-Fuseau <maxime.bouroumeau@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/hyperflask/flask-observability"
+packages = [{include = "flask_observability"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+flask = "^3.0.0"
+opentelemetry-api = "^1.25.0"
+opentelemetry-sdk = "^1.25.0"
+opentelemetry-exporter-otlp = "^1.25.0"
+opentelemetry-instrumentation-flask = "^0.46b0"
+opentelemetry-instrumentation-logging = "^0.46b0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
